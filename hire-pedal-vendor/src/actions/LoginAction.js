@@ -6,11 +6,11 @@ import ActionTypes from '../constants/ActionTypes'
 export function loginUser(requestParams){
 
     return function(dispatch){
-        axios.post(Constants.URL_BASE,requestParams)
+        axios.post(Constants.URL_LOGIN,requestParams)
         .then(response => {
             dispatch({
                 type :ActionTypes.ACTION_LOGIN,
-                payload: response.headers.location
+                payload: response.data
             })
         })
         .catch(error => {

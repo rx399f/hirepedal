@@ -2,17 +2,25 @@ import React, { Component } from 'react';
 import {
     Link, NavLink
 } from 'react-router-dom'
+import { connect } from 'react-redux'
 
 class Header extends Component {
 
     constructor(props) {
         super(props);
-
+        var temp = localStorage.getItem("firstName") + " " + localStorage.getItem("lastName")
+        this.state = {
+            userName: temp
+        }
         this.logoutAction = this.logoutAction.bind(this);
+   
     }
 
-    logoutAction(){
-        
+
+    logoutAction() {
+        localStorage.clear()
+        //this.props.history.push("/login")
+
     }
 
     render() {
@@ -41,11 +49,11 @@ class Header extends Component {
                     </ul>
                     <ul className="navbar-nav">
                         <li className="dropdown dropdown-menu-right">
-                            <a href="#" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partner name<span className="caret"></span></a>
+                            <a href="#" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{this.state.userName}<span className="caret"></span></a>
                             <ul className="dropdown-menu">
                                 <li className="dropdown-item"><a href="#">Profile</a></li>
                                 <li role="separator" className="divider"></li>
-                                <li className="dropdown-item"><Link to="/login">Logout</Link></li>
+                                <li className="dropdown-item"><a onClick={this.logoutAction} href="/login">Logout</a></li>
                             </ul>
                         </li>
 
@@ -58,4 +66,10 @@ class Header extends Component {
 
 }
 
-export default Header;
+function mapStateToProps(state) {
+    return {
+        reducer_login: state.reducer_login
+    };
+}
+
+export default connect(mapStateToProps, {})(Header);

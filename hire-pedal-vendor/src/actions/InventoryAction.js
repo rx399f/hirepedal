@@ -3,14 +3,13 @@ import Constants from '../constants/Constants.js'
 import ActionTypes from '../constants/ActionTypes'
 
 
-
-export function registerPartner(requestParams){
+export function getCategoryList(){
 
     return function(dispatch){
-        axios.post(Constants.URL_REGISTER,requestParams)
+        axios.get(Constants.URL_GET_CATEGORY)
         .then(response => {
             dispatch({
-                type :ActionTypes.ACTION_REGISTER,
+                type :ActionTypes.ACTION_GET_CATEGORY,
                 payload: response.data
             })
         })
@@ -19,3 +18,4 @@ export function registerPartner(requestParams){
         })
     }
 }
+

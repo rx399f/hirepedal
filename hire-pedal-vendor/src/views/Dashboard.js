@@ -22,55 +22,76 @@ class Dashboard extends Component {
             <React.Fragment>
                 <div className="container hp-container">
                     <div className="row">
-                        <div className="col-sm-6 my-4">
-                            <div className="card">
+                        <div className="col-sm-4 my-4">
+
+
+                            <div className="card text-white bg-primary mb-3" >
+                                <div className="card-header">Registered Users</div>
                                 <div className="card-body">
-                                    <h5 className="card-title">Upcoming Bookings</h5>
-                                    <div className="container">
-                                        <ul>
-                                            <li>Prem</li>
-                                            <li>kumar</li>
-                                        </ul>
-                                    </div>
+                                    <h5 className="card-title">5</h5>
+                                    <p className="card-text">Full Deatil</p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div className="col-sm-4 my-4">
+                            <div className="card text-white bg-secondary mb-3" >
+                                <div className="card-header">Listed Cycles</div>
+                                <div className="card-body">
+                                    <h5 className="card-title">10</h5>
+                                    <p className="card-text">Full Deatil</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-sm-6 my-4">
-                            <div className="card">
+                        <div className="col-sm-4 my-4">
+                            <div className="card text-white bg-success mb-3" >
+                                <div className="card-header">Total Bookings</div>
                                 <div className="card-body">
-                                    <h5 className="card-title">Upcoming Audits</h5>
-                                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                    <h5 className="card-title">40</h5>
+                                    <p className="card-text">Full Deatil</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="clearfix"></div>
-                        <div className="col-sm-6 my-4">
-                            <div className="card">
+                        <div className="col-sm-4 my-4">
+                            <div className="card text-white bg-danger mb-3" >
+                                <div className="card-header">Listed Brands</div>
                                 <div className="card-body">
-                                    <h5 className="card-title">Inventory Summary</h5>
-                                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                    <h5 className="card-title">7</h5>
+                                    <p className="card-text">Full Deatil</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-sm-6 my-4">
-                            <div className="card">
+                        <div className="col-sm-4 my-4">
+                            <div className="card text-white bg-warning mb-3" >
+                                <div className="card-header">Queries</div>
                                 <div className="card-body">
-                                    <h5 className="card-title">Revenue</h5>
-                                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                    <h5 className="card-title">3</h5>
+                                    <p className="card-text">Full Deatil</p>
                                 </div>
                             </div>
                         </div>
+
+                        <div className="col-sm-4 my-4">
+                            <div className="card text-white bg-info mb-3" >
+                                <div className="card-header">Testimonials</div>
+                                <div className="card-body">
+                                    <h5 className="card-title">2</h5>
+                                    <p className="card-text">Full Deatil</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
 
- 
+
 
 
             </React.Fragment>

@@ -30,7 +30,7 @@ class Inventory extends Component {
                     <Switch>
                         <Route path='/home/inventory/list' component={InventoryList} />
                         <Route path='/home/inventory/add' component={AddInventory} />
-                        <Redirect to='/home/inventory/add' />
+                        <Redirect to='/home/inventory/list' />
                     </Switch>
 
                     
