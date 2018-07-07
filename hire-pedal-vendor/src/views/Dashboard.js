@@ -29,7 +29,7 @@ class Dashboard extends Component {
                                 <div className="card-header">Registered Users</div>
                                 <div className="card-body">
                                     <h5 className="card-title">5</h5>
-                                    <p className="card-text">Full Deatil</p>
+                                    <p className="card-text">Full Detail</p>
                                 </div>
                             </div>
 
@@ -42,7 +42,7 @@ class Dashboard extends Component {
                                 <div className="card-header">Listed Cycles</div>
                                 <div className="card-body">
                                     <h5 className="card-title">10</h5>
-                                    <p className="card-text">Full Deatil</p>
+                                    <p className="card-text">Full Detail</p>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@ class Dashboard extends Component {
                                 <div className="card-header">Total Bookings</div>
                                 <div className="card-body">
                                     <h5 className="card-title">40</h5>
-                                    <p className="card-text">Full Deatil</p>
+                                    <p className="card-text">Full Detail</p>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ class Dashboard extends Component {
                                 <div className="card-header">Listed Brands</div>
                                 <div className="card-body">
                                     <h5 className="card-title">7</h5>
-                                    <p className="card-text">Full Deatil</p>
+                                    <p className="card-text">Full Detail</p>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@ class Dashboard extends Component {
                                 <div className="card-header">Queries</div>
                                 <div className="card-body">
                                     <h5 className="card-title">3</h5>
-                                    <p className="card-text">Full Deatil</p>
+                                    <p className="card-text">Full Detail</p>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ class Dashboard extends Component {
                                 <div className="card-header">Testimonials</div>
                                 <div className="card-body">
                                     <h5 className="card-title">2</h5>
-                                    <p className="card-text">Full Deatil</p>
+                                    <p className="card-text">Full Detail</p>
                                 </div>
                             </div>
                         </div>
