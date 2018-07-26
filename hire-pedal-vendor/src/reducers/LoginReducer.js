@@ -4,7 +4,8 @@ const INITIAL_STATE = {
     result: {
         loginUser:undefined,
         logoutUser:undefined,
-        registerUser:undefined
+        registerUser:undefined,
+        saveContact:undefined
     }
 }
 
@@ -24,6 +25,10 @@ export default function (state = INITIAL_STATE, action) {
         case ActionTypes.ACTION_REGISTER:
             nextState.result.registerUser = action.payload;
             return { ...state, result: nextState.result }
+        
+        case ActionTypes.ACTION_SAVE_CONTACT_US:
+            nextState.result.saveContact = action.payload;
+            return {...state, result : nextState.result}
 
         default:
             return state

@@ -1,4 +1,4 @@
-import { SIGTTIN } from "constants";
+import { stat } from "fs";
 
 class ActionTypes {
 
@@ -8,8 +8,9 @@ class ActionTypes {
     static ACTION_REGISTER = "ACTION_REGISTER"
     static ACTION_GET_CATEGORY = "ACTION_GET_CATEGORY"
     static ACTION_SAVE_INVENTORY = "ACTION_SAVE_INVENTORY"
+    static ACTION_SAVE_IMAGE = "ACTION_SAVE_IMAGE"
     static ACTION_GET_INVENTORY_LIST = "ACTION_GET_INVENTORY_LIST"
-
+    static ACTION_SAVE_CONTACT_US   = "ACTION_SAVE_CONTACT_US"
 }
 
 export default ActionTypes;

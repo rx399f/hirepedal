@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-    Link, NavLink
+    Link
 } from 'react-router-dom'
 import { getCategoryList } from "../../actions/InventoryAction";
 import { connect } from 'react-redux'
@@ -16,7 +16,7 @@ class InventoryList extends Component {
     }
 
     componentDidMount() {
-        this.props.getCategoryList();
+        
     }
 
 
@@ -27,59 +27,90 @@ class InventoryList extends Component {
                 categories: nextProps.reducer_inventory.result.categories
             })
         }
-
     }
-
 
     render() {
         return (
-            <React.Fragment>
-                <div className="row justify-content-end">
-                    <div className=".col-md-4 .offset-my-4">
-                        <Link to="/home/inventory/add" className="btn btn-primary">Add</Link>
+            <div className="col-12">
+                <div className="mdl-color--white mdl-shadow--2dp op-card mb-5">
+                    <h4 className="op-card-heading mb-4">INVENTORY LIST</h4>
+                    <div className="op-card-flot-btn">
+                        <Link to='/dashboard/addInventory' className="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                            <i className="material-icons">add</i>
+                        </Link>
                     </div>
-                </div>
-                <div className="clearfix"></div>
-                <div className="row">
-                    <div className="col">
-                        <ul class="list-group">
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Hercules - Roadsters
-    <span class="badge badge-primary badge-pill">14</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Hercules - Roadeo
-    <span class="badge badge-primary badge-pill">2</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Hercules - Ryders
-    <span class="badge badge-primary badge-pill">1</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Hercules - Turbodrive
-    <span class="badge badge-primary badge-pill">14</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Hercules - CMX
-    <span class="badge badge-primary badge-pill">2</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Hero Cycles - Maxim Fun Series
-    <span class="badge badge-primary badge-pill">1</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Hero Cycles - Super Start Series
-    <span class="badge badge-primary badge-pill">2</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Hero Cycles - City Bikes
-    <span class="badge badge-primary badge-pill">1</span>
-                            </li>
-                        </ul>
+                    <div className="clearfix"></div>
+                    <div className="row mx-0 py-4">
+                        <div className="col-3">
+                            <div className="op-card-list mb-4">
+                                <div className="card">
+                                    <img className="card-img-top" src="../images/cycle-inventory.png" alt="Card image cap" />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Hercules - Roadsters <span className="float-right mdl-color-text--pink-A200">14</span></h5>
+                                        <p>catetory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="op-card-list mb-4">
+                                <div className="card">
+                                    <img className="card-img-top" src="../images/cycle-inventory.png" alt="Card image cap" />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Hercules - Roadsters <span className="float-right mdl-color-text--pink-A200">14</span></h5>
+                                        <p>catetory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="op-card-list mb-4">
+                                <div className="card">
+                                    <img className="card-img-top" src="../images/cycle-inventory.png" alt="Card image cap" />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Hercules - Roadsters <span className="float-right mdl-color-text--pink-A200">14</span></h5>
+                                        <p>catetory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="op-card-list mb-4">
+                                <div className="card">
+                                    <img className="card-img-top" src="../images/cycle-inventory.png" alt="Card image cap" />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Hercules - Roadsters <span className="float-right mdl-color-text--pink-A200">14</span></h5>
+                                        <p>catetory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="op-card-list mb-4">
+                                <div className="card">
+                                    <img className="card-img-top" src="../images/cycle-inventory.png" alt="Card image cap" />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Hercules - Roadsters <span className="float-right mdl-color-text--pink-A200">14</span></h5>
+                                        <p>catetory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="op-card-list mb-4">
+                                <div className="card">
+                                    <img className="card-img-top" src="../images/cycle-inventory.png" alt="Card image cap" />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Hercules - Roadsters <span className="float-right mdl-color-text--pink-A200">14</span></h5>
+                                        <p>catetory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div className="clearfix"></div>
                 </div>
-
-            </React.Fragment>
+            </div>
 
         )
     }

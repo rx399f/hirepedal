@@ -3,10 +3,9 @@ import {
   BrowserRouter as Router,
   Route,Redirect,
   Link
-} from 'react-router-dom'
-import Home from './views/Home'
-import Login from './views/Login'
-import Register from './views/Register'
+} from 'react-router-dom';
+import Home from './views/Home';
+
 import axios from "axios"
 
 
@@ -17,19 +16,15 @@ class App extends Component {
     //axios.defaults.headers.common['username'] = 'admin';
     //axios.defaults.headers.common['password'] = 'pa$$w0rd';
     axios.defaults.headers.common['Authorization'] = 'Basic YWRtaW46cGEkJHcwcmQ=';
+    axios.defaults.headers.common['Content-Type'] = 'application/json';
     
   }
 
   render() {
     return (
-      <Router>
         <React.Fragment>
-          <Route exact path="/" component={Login} />
-          <Route path="/home" component={Home} />
-          <Route path="/login" component={Login} />
-          <Route path="/register" component={Register} />
+          <Home/>
         </React.Fragment>
-      </Router>
     );
   }
 

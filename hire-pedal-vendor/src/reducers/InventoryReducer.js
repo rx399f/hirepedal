@@ -4,7 +4,8 @@ const INITIAL_STATE = {
     result: {
         inventoryList:[],
         saveInventory:{},
-        categories:[]
+        categories:[],
+        saveImage:undefined
     }
 }
 
@@ -22,6 +23,10 @@ export default function (state = INITIAL_STATE, action) {
 
         case ActionTypes.ACTION_SAVE_INVENTORY:
             nextState.result.saveInventory = action.payload;
+            return { ...state, result: nextState.result }
+        
+        case ActionTypes.ACTION_SAVE_IMAGE:
+            nextState.result.saveImage = action.payload;
             return { ...state, result: nextState.result }
 
         default:

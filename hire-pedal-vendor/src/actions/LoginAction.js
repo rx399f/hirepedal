@@ -34,3 +34,20 @@ export function getUserInfo(userId){
         })
     }
 }
+
+
+export function saveContactUS(requestParams){
+
+    return function(dispatch){
+        axios.post(Constants.URL_CONTACT_US,requestParams)
+        .then(response => {
+            dispatch({
+                type :ActionTypes.ACTION_SAVE_CONTACT_US,
+                payload: response.data
+            })
+        })
+        .catch(error => {
+            console.log(error);
+        })
+    }
+}
